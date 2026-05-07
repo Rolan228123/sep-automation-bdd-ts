@@ -102,7 +102,7 @@ export class StartApplicationPage extends BasePage {
   public readonly discountedPrice: Locator 
     = this.page.locator("//b[@class='info-primary']");
 
-  public readonly originalPrice: Locator 
+  public readonly originalPrice: Locator
     = this.page.locator("//s[contains(.,'$')]");
 
   

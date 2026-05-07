@@ -6,6 +6,7 @@
     "test": "npx cucumber-js",
     "test:tag": "npx cucumber-js --tags @sep11",
     "test:smoke": "npx cucumber-js --tags @smoke",
+    "test:tag:dryrun": "npx cucumber-js --tags @sep11 --dry-run",
     "Mac-open:report": "open reports/cucumber-report.html",
     "Windows-open:report": "start reports/cucumber-report.html"
   },
@@ -14,11 +15,13 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@cucumber/cucumber": "^10.9.0",
-    "@playwright/test": "^1.48.0",
-    "@types/cucumber": "^7.0.0",
-    "@types/node": "^20.16.11",
+    "@cucumber/cucumber": "^12.8.2",
+    "@playwright/test": "^1.59.1",
+    "@types/cucumber": "^7.0.3",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0"
   }
 }
