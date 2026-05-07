@@ -1,5 +1,5 @@
 import { BasePage } from "./BasePage";
-import { Locator } from 'playwright';
+import { Locator } from "playwright";
 
 export class StartApplicationPage extends BasePage {
   public readonly startApplicationText: Locator = this.page.locator(
@@ -138,6 +138,8 @@ export class StartApplicationPage extends BasePage {
     "//s[contains(.,'$')]",
   );
 
+  public readonly phone_Color: Locator = this.page.getByText("Phone");
+
   /**
    * Performs login operation using Basic Authentication
    * and navigates to the specified URL
@@ -147,11 +149,4 @@ export class StartApplicationPage extends BasePage {
     await this.howDidYouHearAboutUsDropDown.click();
     await this.page.getByText(option).click();
   }
-
-  
-
-
 }
-
-
-
