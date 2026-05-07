@@ -9,3 +9,19 @@ Feature: Display the steps of the checkout process
 
 
     #TODO: Create scenarios that cover all the acceptance criteria
+
+    Background:
+        Given user is on the enrollment page
+
+    @sep08-1 @regression
+    Scenario: Verify that system display the steps of the checkout process as "1-Start Application", "2-Payment Plan", and "3-Review"
+        Then user sees the steps of the checkout process as "Start Application", "Payment plan", and "Review"
+    
+    @sep08-2 @regression
+    Scenario: Verify that system should highlight "Start Application" in blue
+        Then user sees step circle on start application is blue
+
+    @sep08-3 @regression
+    Scenario: Verify that while user is on start aplication page system should display "Payment Plan" and "Review" in grey.
+        Then  user sees step circle on payment plan is grey
+        And  user sees step circle on review is grey
