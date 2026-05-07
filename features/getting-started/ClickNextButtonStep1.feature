@@ -24,7 +24,7 @@ Feature: Click on the next button on step 1
     @sep19-2 @smoke
     Scenario: verify that user can click the next button with only required fields filled
         Then user sees step circle on start application is blue
-        When uuser fills in only the required fields with valid information
+        When user fills in only the required fields with valid information
         And user clicks on the next button
         Then user sees step circle on payment plan is blue
         

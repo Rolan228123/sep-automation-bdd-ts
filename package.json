@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cucumber-js",
-    "test:tag": "npx cucumber-js --tags @sep11",
+    "test:tag": "npx cucumber-js --tags @sep19",
     "test:smoke": "npx cucumber-js --tags @smoke",
-    "test:tag:dryrun": "npx cucumber-js --tags @sep11 --dry-run",
+    "test:tag:dryrun": "npx cucumber-js --tags @sep19 --dry-run",
     "Mac-open:report": "open reports/cucumber-report.html",
     "Windows-open:report": "start reports/cucumber-report.html"
   },
@@ -22,6 +22,7 @@
     "typescript": "^5.9.3"
   },
   "devDependencies": {
+    "@faker-js/faker": "^10.4.0",
     "@types/node": "^25.6.0"
   }
 }
