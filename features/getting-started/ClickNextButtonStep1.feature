@@ -8,7 +8,7 @@ Feature: Click on the next button on step 1
     #*              b. Test by providing only the required fields
     
 
-    #TODO: Create scenarios that cover all the acceptance criteria
+    #TODO: Create scenarios that cover all the acceptance criteri
 
     
     Background: 
